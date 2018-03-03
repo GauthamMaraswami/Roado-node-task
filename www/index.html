@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Express.js example</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+    </head>
+    <body class="home"> 
+        <article class="textLeft" id="main">
+            <img class="logo" src="images/nodejs-logo.png">
+            <h1>Example Form</h1>
+            <p>Enter some info and then click "Submit"</p>
+            <div>
+                <form method="POST" id="testForm">
+                  <label>Outlet name:</label>
+                  <input type="text" name="OName"><br>
+                  <label>Service Provider name:</label>
+                  <input type="text" name="SPName">
+                  <select name="Smartphone">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                  <label>Phone no:</label>
+                  <input type="text" name="pno">
+                  <label>Alternate Phone no</label>
+                  <input type="text" name="altpno">
+
+                  <label>Location:</label>
+                  <input type="text" name="location">
+
+                  <label>Opening time:</label>
+                  <input type="text" name="otime">
+
+                  <label>Closing time</label>
+                  <input type="text" name="ctime">
+
+                  <label>Establishment year:</label>
+                  <input type="text" name="estyear">
+
+                  <label>Vehicle Deyails:</label>
+                  <div id="vehicledet">
+
+
+                  </div>
+                  
+                  
+                  <label>Services Details:</label>
+                  <div id="servicelist"></div>
+                  <ol>
+                   
+                  </ol>
+
+                  <label>Photo Upload:</label>
+
+
+
+
+
+                  <button type="submit" id="submitButton">Submit</button><img class="ajaxLoader" src="images/ajax-loader.gif">
+                </form>
+                <button type="add" id="addservices">ADD Services</button>
+                <button type="add" id="vehicles">ADD Vehicles</button>
+            </div>
+            <section id="post-results-container">
+              <h2>POST DATA</h2>
+              <p>Here is the data you posted:</p>
+              <ul class="data"></ul>
+            </section>
+        </article>
+        
+      <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+      <script type="text/javascript" src="js/form-handler.js"></script>
+    </body> 
+</html>
