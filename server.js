@@ -110,7 +110,7 @@ app.post('/update',function(req, res){
 		  countofservices:myobj.countofservices,
 		  services:myobj.services,
 		  countofvehicles:myobj.countofvehicles,
-		  ehicles:myobj.vehicles}, function(err, res) {
+		  vehicles:myobj.vehicles}, function(err, res) {
 		  if (err) throw err;
 		  console.log("1 document updated");
 		  db.close();

@@ -120,7 +120,7 @@ $("#addvehicleupdate").click(function(){
       var position=[];
     position[0]=parseFloat(document.getElementById("location1").value);
     position[1]=parseFloat(document.getElementById("location2").value);
-      alert(document.getElementById("Oname").value);
+     // alert(document.getElementById("Oname").value);
       //make the AJAX call
       $.ajax({
         url: '/update',
@@ -242,18 +242,19 @@ function updateContainer () {
     }
     else if(key=="services")
     {
-      alert(countofservices);
+      //alert(countofservices);
       $data.append('<div id="updateservices">');
       for(var i=0;i<countofservices;++i)
       {
         var servicess=JSON.parse(val[i]);
-        alert(servicess.service);
+      //  alert(servicess.service);
           $data.append('<input type="text" id="services1'+String(i)+'" placeholder="Type of service" name="services'+String(i)+'" value="'+servicess.service+'"> ');
          }
       $data.append('</div>');
     }
     else if(key=="vehicles")
     {
+      
       $data.append('<div id="updatevehicles">');
       for(var i=0;i<countofvehicles;++i)
       {
