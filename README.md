@@ -10,7 +10,7 @@
 ## files modified
 * server.js
 * www/index.html
-* js/form-handler.js
+* www/js/form-handler.js
 
 
 ## youtube link for Screen cast https://youtu.be/rGON5TVwzS4
