@@ -8,11 +8,30 @@
     </head>
     <body class="home"> 
         <article class="textLeft" id="main">
-            <img class="logo" src="images/nodejs-logo.png">
-            <h1>Example Form</h1>
-            <p>Enter some info and then click "Submit"</p>
+          <h2>Search Update and Delete Record</h2>
             <div>
-                <form method="POST" id="testForm">
+                <button type="search" id="searchforentry">Search</button>
+                <button type="Delete" id="Delete_Record">delete</button>
+                <button type="Update" id="Update_Record">update</button>
+                <input type="text" name="search" id="search"> 
+                <section id="post-results-container1">
+                         <ul class="data"></ul>
+                </section>
+            </div>
+          <section id="update_details_container" >
+                <form method="POST" id="updateForm">
+                  <div class="data">
+                  </div>
+                </form >
+                <button type="add" id="addvehicleupdate">ADD Vehicles</button>
+                <button type="add" id="addservicesupdate">ADD Services</button>
+                <button type="add" id="submitupdate">submitupdate</button>
+          </section>
+           <h2>Signup new Service Center</h2>
+           <p>Enter some info and then click "Submit"</p>
+           <div>
+              <form method="POST" id="testForm">
+                <div id="blah">
                   <label>Outlet name:</label>
                   <input type="text" name="OName"><br>
                   <label>Service Provider name:</label>
@@ -25,46 +44,40 @@
                   <input type="text" name="pno">
                   <label>Alternate Phone no</label>
                   <input type="text" name="altpno">
-
-                  <label>Location:</label>
-                  <input type="text" name="location">
-
+                  <label>Location Latitude:</label>
+                  <input type="text" name="location1" id="location1">
+                  <label>Location Longitude:</label>
+                  <input type="text" name="location2" id="location2">
                   <label>Opening time:</label>
                   <input type="text" name="otime">
-
                   <label>Closing time</label>
                   <input type="text" name="ctime">
-
                   <label>Establishment year:</label>
                   <input type="text" name="estyear">
-
                   <label>Vehicle Deyails:</label>
-                  <div id="vehicledet">
-
-
-                  </div>
-                  
-                  
+                  <div id="vehicledet"></div> 
                   <label>Services Details:</label>
                   <div id="servicelist"></div>
-                  <ol>
-                   
+                  <ol>                   
                   </ol>
-
                   <label>Photo Upload:</label>
-
-
-
-
-
                   <button type="submit" id="submitButton">Submit</button><img class="ajaxLoader" src="images/ajax-loader.gif">
-                </form>
-                <button type="add" id="addservices">ADD Services</button>
-                <button type="add" id="vehicles">ADD Vehicles</button>
+                  </div>
+              </form>
+              <button type="add" id="addservices">ADD Services</button>
+              <button type="add" id="vehicles">ADD Vehicles</button>
             </div>
             <section id="post-results-container">
-              <h2>POST DATA</h2>
-              <p>Here is the data you posted:</p>
+               <ul class="data"></ul>
+            </section>
+            <section id="search-service-centers-nearby">
+              <h2>Search Service centers</h2>
+              <input type="text" name="latitude" placeholder="latitude" id="latitudesearch"> 
+              <input type="text" name="longitude" placeholder="longitude" id="longitudesearch"> 
+              <input type="text" name="distance" placeholder="distance" id="distancelocal"> 
+              <button type="search" id="searchservice">Search location</button>
+            </section>
+            <section id="searchResult">
               <ul class="data"></ul>
             </section>
         </article>

@@ -2,7 +2,8 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "4.14.0",
-    "mongodb": "^3.0.3"
+    "mongodb": "^3.0.3",
+    "mongodb-autoincrement": "^1.0.1"
   },
   "scripts": {
     "start": "node server.js"
